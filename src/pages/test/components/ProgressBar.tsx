@@ -372,12 +372,6 @@ export function ProgressBar(): ReactElement {
               <RightTerms>
                 {timeTakenToTypeEachWordInOrder?.length == 0 ? 0 : Accuracy}%
                 acc
-                {/* <div>
-                  {isNaN(averageOfLocalStats.toFixed(0))
-                    ? '0'
-                    : averageOfLocalStats.toFixed(0)}{' '}
-                  lWPM
-                </div> */}
                 <div className="text-[#38bdf8]">
                   {isNaN(averageOfLocalStats.toFixed(0))
                     ? '0'
