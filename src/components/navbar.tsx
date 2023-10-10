@@ -12,12 +12,14 @@ import CPM_Icon from '../assets/CPM_icon.png';
 import Crown_Icon from '../assets/Crown_icon.png';
 import StM_Icon from '../assets/StM.png';
 import tWPM_Icon from '../assets/tWPM.png';
+import analytic_DashIcon from '../assets/AnalyticalDashboard.png';
 import LockIconWhite from '../../src/pages/test/components/LockIconWhite';
 import ConstructionIconWhite from '../../src/pages/test/components/ConstructionIconWhite';
 import { ScoresComponent } from './scoresComponent';
 import InfoIcon from '../../src/pages/test/components/InfoIcon';
 import type { TrainingLevels } from '../../src/models/trainingLevels';
 import Circle from './CircleHighlight';
+import AnalyticalDashboardButton from '../../src/pages/test/components/AnalyticalDashboardButton';
 import HamburgerMenu from './hamburgerMenu';
 
 const Navbar = (): ReactElement => {
@@ -177,6 +179,22 @@ const Navbar = (): ReactElement => {
           </NavMenuLink>
         </NavMenu>
         <ScoresComponent />
+
+        {/* <NavBtnLink
+          href="#/analyticalDashboard"
+          onClick={() => setTrainingLevel('')}
+        >
+           <img src={analytic_DashIcon} width="40" height="40"></img>
+        </NavBtnLink>  */}
+        <NavMenuLink>
+          <NavLinksBtnImage
+            href="#/analyticalDashboard"
+            onClick={() => setTrainingLevel('')}
+          >
+            <img src={analytic_DashIcon} width="40" height="40"></img>
+          </NavLinksBtnImage>
+        </NavMenuLink>
+
         <NavBtn>
           <NavMenuLink aria-current="page">
             <NavLinksImage open={false} src={Crown_Icon} alt="" />
@@ -296,6 +314,16 @@ const NavLinksImage = styled.img<{ open: boolean }>`
   &.active {
     border-bottom: 3px solid #01bf71;
   }
+`;
+
+const NavLinksBtnImage = styled.a`
+  align-items: center;
+  color: #fff;
+  display: relative;
+  cursor: pointer;
+  color: #fff;
+  justify-self: center;
+  padding: 10px 1px;
 `;
 
 const NavLinksImageTransparent = styled.img`
