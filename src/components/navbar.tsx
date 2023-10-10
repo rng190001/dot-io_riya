@@ -322,8 +322,8 @@ const NavLinksBtnImage = styled.a`
   display: relative;
   cursor: pointer;
   color: #fff;
-  justify-self: center;
-  padding: 10px 1px;
+  justify-self: flex-start;
+  padding: 16px 1px;
 `;
 
 const NavLinksImageTransparent = styled.img`
