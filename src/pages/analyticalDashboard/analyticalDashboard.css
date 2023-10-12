@@ -1,4 +1,50 @@
-.ring-gradient {
-    background-image: linear-gradient(to right, blue 0%, red 100%);
-  }
-  
+.skill{
+    width: 160px;
+    height: 160px;
+    position:relative;
+}
+
+.outer{
+    width: 280px;
+    height: 280px;
+    border-radius:50%;
+    border: 1px solid #222424;
+    padding: 20px;
+}
+
+.inner{
+   height: 240px;
+   width: 240px;
+   border-radius:50%;
+   align-items:center;
+   justify-content: center;
+   display: flex;
+   border: 1px solid #222424;
+}
+
+#circle1{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    /* stroke-dasharray: 125; */
+    /* stroke-dashoffset: 125; */
+    animation: anim 2s linear forwards;
+}
+
+#grad{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.inner1{
+    align-items:center;
+   justify-content: center;
+   display: flex;
+}
+
+/* @keyframes anim{
+    100%{
+        stroke-dashoffset: 125;
+    }
+} */

@@ -186,15 +186,18 @@ const Navbar = (): ReactElement => {
         >
            <img src={analytic_DashIcon} width="40" height="40"></img>
         </NavBtnLink>  */}
-        <NavMenuLink>
+        <NavMenuLink style={{ paddingTop: '10px' }}>
           <NavLinksBtnImage
             href="#/analyticalDashboard"
             onClick={() => setTrainingLevel('')}
           >
-            <img src={analytic_DashIcon} width="40" height="40"></img>
+            <img
+              src={analytic_DashIcon}
+              style={{ width: '40px', height: '40px' }}
+            ></img>
           </NavLinksBtnImage>
         </NavMenuLink>
-
+        {/* position:'relative',left: '10px', top:'10px', */}
         <NavBtn>
           <NavMenuLink aria-current="page">
             <NavLinksImage open={false} src={Crown_Icon} alt="" />
@@ -229,7 +232,7 @@ const LogoLink = styled.a.attrs({
 })``;
 
 const NavMenuLink = styled.a.attrs({
-  className: `py-1 rounded-md hover:bg-[#333]`,
+  className: `py-1 items-center relative rounded-md hover:bg-[#333] align-center`,
 })``;
 
 const NavI = styled.nav`
@@ -250,13 +253,13 @@ const NavI = styled.nav`
 `;
 
 const NavbarContainer = styled.div`
-display: flex;
-justify-content: space-between;
-height: 63px;
-z-index: 1;
-width: 100%;
-padding 0 24px;
-max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    height: 63px;
+    z-index: 1;
+    width: 100%;
+    padding 0 24px;
+    max-width: 1100px;
 `;
 
 const NavLogo = styled.div`
@@ -322,8 +325,8 @@ const NavLinksBtnImage = styled.a`
   display: relative;
   cursor: pointer;
   color: #fff;
+  justify-content: center;
   justify-self: flex-start;
-  padding: 16px 1px;
 `;
 
 const NavLinksImageTransparent = styled.img`
