@@ -5,5 +5,5 @@ export const AnalyticalDashboardPageContainer = styled.section.attrs({
 })``;
 
 export const TopSectionContainer = styled.div.attrs({
-  className: `container px-5 py-24 mx-auto`,
+  className: `container px-5 py-8 mx-auto`,
 })``;
